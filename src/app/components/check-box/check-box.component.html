@@ -1,0 +1,10 @@
+<label attr.for="checkbox_{{ todo?.id }}" class="checkbox-label"
+  >{{ todo?.todo }}
+  <input
+    id="checkbox_{{ todo?.id }}"
+    type="checkbox"
+    [value]="todo?.todo"
+    (change)="onCheckboxChange(todo)"
+  />
+  <span class="checkmark"></span>
+</label>

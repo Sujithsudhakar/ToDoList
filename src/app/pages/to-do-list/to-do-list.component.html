@@ -1,0 +1,7 @@
+<div class="container" *ngIf="list$">
+  <app-title class="algn-ctr" [title]="title1"></app-title>
+  <app-box [boxColor]="bxGreen" [todos]="list$['todos']"></app-box>
+  <app-title class="algn-ctr" [title]="title2"></app-title>
+  <app-check-list [boxColor]="bxGrey" [todos]="list$['todos']"></app-check-list>
+  <p class="algn-ctr">Task Board by {{ userName }}</p>
+</div>

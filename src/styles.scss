@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Shantell+Sans&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+}
+ul {
+  list-style: none;
+}
+.box-green {
+  background-color: #cae4ba;
+}
+.box-grey {
+  background-color: #d9d9d9;
+}
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.algn-ctr {
+  text-align: center;
+}

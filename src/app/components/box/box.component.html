@@ -1,0 +1,9 @@
+<section class="{{ boxColor }}">
+  <ul class="box-list">
+    <ng-container *ngFor="let item of todos; let i = index">
+      <li class="box-item" *ngIf="item.completed">
+        <app-cards [todo]="item" class="box-shadow"></app-cards>
+      </li>
+    </ng-container>
+  </ul>
+</section>

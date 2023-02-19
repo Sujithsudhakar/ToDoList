@@ -1,0 +1,39 @@
+.box-list {
+  padding: 3rem;
+  display: grid;
+  gap: 4rem;
+}
+
+@media (min-width: 600px) {
+  .box-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .box-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .box-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+ul li:nth-child(even) {
+  transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+}
+ul li:nth-child(3n) {
+  transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+}
+ul li:nth-child(5n) {
+  transform: rotate(5deg);
+  position: relative;
+  top: -10px;
+}

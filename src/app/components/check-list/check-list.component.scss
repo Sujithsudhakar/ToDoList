@@ -1,0 +1,16 @@
+.box-list {
+  margin: 0;
+  padding: 2rem;
+  li {
+    font-family: "Shantell Sans", cursive;
+    background: #fff;
+    margin: 15px 0;
+    padding: 15px;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
