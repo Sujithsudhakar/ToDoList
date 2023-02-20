@@ -2,8 +2,14 @@
   <ul class="box-list">
     <ng-container *ngFor="let item of todos; let i = index">
       <li class="box-item" *ngIf="!item.completed">
-        <app-check-box [todo]="item"></app-check-box>
+        <app-check-box
+          (emitCheckEvent)="submitCheckBox($event)"
+          [todo]="item"
+        ></app-check-box>
       </li>
     </ng-container>
+    <li *ngIf="count === 0">
+      Congratulations! Your to-do list has been completed!
+    </li>
   </ul>
 </section>

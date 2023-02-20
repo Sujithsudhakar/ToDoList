@@ -2,7 +2,10 @@
   <ul class="box-list">
     <ng-container *ngFor="let item of todos; let i = index">
       <li class="box-item" *ngIf="item.completed">
-        <app-cards [todo]="item" class="box-shadow"></app-cards>
+        <app-cards
+          [todo]="item"
+          [className]="'box-white box-shadow'"
+        ></app-cards>
       </li>
     </ng-container>
   </ul>
